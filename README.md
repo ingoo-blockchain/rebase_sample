@@ -8,7 +8,7 @@ $ git config --global core.editor "vi"
 이번에 배울 rebase -i 는 
 총 4가지 기능에 대해서 해볼거에요.
 
-메시지 커밋 변경
+커밋 메시지 변경
 커밋 삭제
 커밋 합치기
 커밋 나누기
@@ -28,7 +28,7 @@ git rebase -i [커밋해시]
 **명령어**
 - p, pick : 커밋 그대로 두기
 - r, reword : 커밋 메시지 변경
-- e, edit  : 수정을 위해 정지
+- e, edit  : 수정을 위해 정지 커밋 나누기
 - d, drop  : 커밋 삭제
 - s, squash : 이전 커밋에 합치기
 
@@ -36,13 +36,25 @@ git rebase -i [커밋해시]
 ## 커밋메시지 변경하기
 리스트페이지 완성~ 메시지를 r 을 활용하여 해결
 
+```sh
+$ git rebase -i 624fd38702d54fce0fbae08d05bbb6d52767695c
+```
 
 ## 커밋 삭제
 test.html 에 해당하는 커밋을 
+
+```sh
+$ git rebase -i eadb1c828ab7a7e888b5afdae239c4cf731d0a76
+```
+
 d 입력
 
 ## 커밋 합치기
 수정_1 , 수정_2 커밋을 합치기
+```sh
+$ git rebase -i acd0a304dd32176ae450d5f0afa5777e8aa3c775
+```
+
 
 ## 커밋나누기
 완성했따~~ 는
