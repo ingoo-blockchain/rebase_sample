@@ -88,4 +88,4 @@ git push -f
 원격저장소 수정하기
 수정2
 
-ㅁㄴㅇㄻㄴㅇㄹ
+ㅁㄴㅇㄻㄴㅇㄹasdfasdfasdfasdf
